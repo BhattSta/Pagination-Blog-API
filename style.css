@@ -1,0 +1,428 @@
+/* .row {
+    
+} */
+/* typo */
+body{
+    font-family: 'Goldman', cursive;
+    background-color: #4f9dc4;
+}
+h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
+div.demo h3{
+    display: block;
+    width: 100%;
+}
+div.demo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.demo > img{ 
+    flex: 0 0 50%;
+    max-width: 50%;
+    object-fit: cover;
+}
+div.demo > p{ 
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 16;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    /* text-overflow: ellipsis;
+    max-height: 160px; */
+}
+div.demo:nth-child(odd){
+    flex-direction: row-reverse;
+}
+div.demo:nth-child(odd) p{
+    padding-right: 30px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.bg-image{
+    background-image: url('slider.jpg');
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+header{
+    /* background-color: #008ecc; */
+    background-color: transparent;
+}
+
+header img{
+    height: 55px;
+    width: 55px;
+    margin: 10px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav {
+    display: flex;
+}
+header .nav li .nav-link{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s;
+}
+
+
+.user{
+    color: white;
+}
+
+/* #user{
+    color: white;
+    text-decoration: none;
+    display: none;
+}
+
+.hov i span:hover{
+    background-color: aqua;
+    color: black;
+    text-decoration: none;
+    display: block;
+} */
+
+.slider{
+    max-width: 100%;
+    height: auto;
+}
+
+/* table, td, th {  
+    border: 3px solid #ddd;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+} */
+table{
+    margin-left: 450px;
+    margin-bottom: 80px;
+}
+
+table tr td input{
+    padding: 10px;
+    background-color: white;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.spinner{
+    margin-top: 25px;
+    margin-left: 500px;
+    margin-bottom: 80px;
+}
+
+/* .overr{
+    overflow: hidden;
+    text-overflow: ellipsis; 
+} */
+
+#tableData{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.b{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.btnActive{
+    background-color: yellow;
+}
+/* Extra Small Device - Smart Phone */
+
+@media only screen and (max-width:600px) {
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    .col-xs-2 {
+        width: 16.66%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.33%;
+    }
+    .col-xs-5 {
+        width: 41.66%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.33%;
+    }
+    .col-xs-8 {
+        width: 66.66%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-10 {
+        width: 83.33%;
+    }
+    .col-xs-11 {
+        width: 91.66%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+}
+
+
+/* Small Device - Portrait Phone Tablet */
+
+@media only screen and (min-width:600px) {
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
+        width: 75%;
+    }
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+
+/* Medium Device - Landscape Tablet */
+
+@media only screen and (min-width:768px) {
+    .container {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+
+/* Large Device - Laptop/Desktop */
+
+@media only screen and (min-width:992px) {
+    .container {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 75%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+
+/* Extra Large Device - Large Dekstop */
+
+@media only screen and (min-width:1200px) {
+    .container {
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .col-xl-1 {
+        width: 8.33%;
+    }
+    .col-xl-2 {
+        width: 16.66%;
+    }
+    .col-xl-3 {
+        width: 25%;
+    }
+    .col-xl-4 {
+        width: 33.33%;
+    }
+    .col-xl-5 {
+        width: 41.66%;
+    }
+    .col-xl-6 {
+        width: 50%;
+    }
+    .col-xl-7 {
+        width: 58.33%;
+    }
+    .col-xl-8 {
+        width: 66.66%;
+    }
+    .col-xl-9 {
+        width: 75%;
+    }
+    .col-xl-10 {
+        width: 83.33%;
+    }
+    .col-xl-11 {
+        width: 91.66%;
+    }
+    .col-xl-12 {
+        width: 100%;
+    }
+}

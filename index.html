@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="bg-image">
+        <header class="container">
+            <a href="#" class="logo">
+                <img src="Logo.png" alt="" />
+            </a>
+            <ul class="nav">
+                <li><a class="nav-link" href="#">Home</a></li>
+                <li><a class="nav-link" href="#">About</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="tooltip">
+                <i class="fa-solid fa-circle-user fa-4x user" id="us"><span id="user"
+                        style="font-size: 15px; font-family: 'Goldman', cursive;" class="tooltiptext">Stavan Bhatt</span></i>
+            </a>
+        </header>
+    </div>
+    <main>
+        <section>
+            <div class="fa-3x" id="spinner">
+                <i class="fas fa-sync fa-spin spinner"></i>
+                <span>Loading Data...</span>
+            </div>
+        </section>
+        <div>
+            <h1 style="text-align: center;" id="heading">DATA FROM API</h1>
+            <div class="container">
+                <div id="tableData">
+
+                </div>
+            </div>
+        </div>
+        <div id="paging">
+
+        </div>
+    </main>
+</body>
+</html>
